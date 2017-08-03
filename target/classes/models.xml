@@ -1,0 +1,54 @@
+<models>
+
+	<model id= "0001" name = "three chromosomes">
+		
+		<individuals>
+			<individual name = "coordinate tricluster">individuals.CoorTricluster</individual>
+			<individual name = "set tricluster">individuals.SetTricluster</individual>
+		</individuals>
+		
+		<fitnessfunctions>
+			<fitness name = "msr3d">fitnessfunctions.Msr3d</fitness>
+			<fitness name = "lsl">fitnessfunctions.Lsl</fitness>
+			<fitness name = "msl">fitnessfunctions.Msl</fitness>
+		</fitnessfunctions>
+		
+		<datahierarchies>
+			<datahierarchy name="levels">datahierarchies.LevelDataHierarchy</datahierarchy>
+			<datahierarchy name="grid">datahierarchies.GridDataHierarchy</datahierarchy>
+			<datahierarchy name="2grid">datahierarchies.Grid2DataHierarchy</datahierarchy>
+		</datahierarchies>
+		
+		<stoppingcriteria>
+			<stoppingcriterion name = "find solutions">stoppingcriteria.FindSolutionsStop</stoppingcriterion>
+			<stoppingcriterion name = "deplete data hierarchy">stoppingcriteria.DepleteDataHierarchyStop</stoppingcriterion>
+		</stoppingcriteria>
+		
+		<solutioncriteria>
+			<solutioncriterion name = "minimum fitness">solutioncriteria.MinimumFitness</solutioncriterion>
+		</solutioncriteria>
+				
+		<!--All of them include random + data hierarchy methods  -->
+		<initialpops>
+			<initialpop name ="basic">initialpops.BasicInitialPop</initialpop>
+			<initialpop name ="tensors">initialpops.TensorInitialPop</initialpop>
+			<initialpop name ="earthquake">initialpops.EarthQuakeInitialPop</initialpop>
+		</initialpops>	
+		
+		<selections>
+			<selection name = "tournament">selections.TournamentSelection</selection>
+		</selections>
+		
+		<crossovers>
+			<crossover name = "one point">crossovers.OnePointCrossover</crossover>
+			<crossover name = "relaxed">crossovers.RelaxedCrossover</crossover>
+		</crossovers>
+		
+		<mutations>
+			<mutation name = "put, remove and change">mutations.PutRemChanMutation</mutation>
+		</mutations>	
+		
+	</model>
+
+</models>
+
