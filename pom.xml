@@ -2,9 +2,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>application</groupId>
-	<artifactId>utils-app</artifactId>
+	<artifactId>trlab-utilities</artifactId>
 	<version>1.0.0</version>
-	<name>Utils Application</name>
+	<name>Utilities Application</name>
 
 
 
@@ -95,5 +95,5 @@
 
 
 
-	<description>Utils Application</description>
+	<description>Utilities</description>
 </project>
