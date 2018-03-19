@@ -57,6 +57,7 @@ public class Tricluster {
 	}
 	
 	
+	
 	public void loadCoordinates (List<Integer> genes, List<Integer> samples, List<Integer> times){
 		
 		this.genes = genes;

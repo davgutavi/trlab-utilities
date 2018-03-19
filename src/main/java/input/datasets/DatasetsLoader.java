@@ -66,7 +66,7 @@ public class DatasetsLoader {
 	public DatasetsLoader(String resourcesPath) {
 
 		// rPath = resourcesPath;
-
+		
 		rPath = TextUtilities.getRootPathWithSlash(resourcesPath);
 
 		// String xmlPath = TextUtilities.appendToPath(resourcesPath,
@@ -75,12 +75,15 @@ public class DatasetsLoader {
 		xmlPath = resourcesPath;
 
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-
+		
+		
+		
 		DocumentBuilder builder = null;
 
 		try {
 			builder = factory.newDocumentBuilder();
 			xmlDoc = builder.parse(new File(xmlPath));
+			
 			root = xmlDoc.getDocumentElement();
 		} catch (ParserConfigurationException e) {
 			LOG.error("Parser error");
@@ -92,6 +95,8 @@ public class DatasetsLoader {
 			LOG.error("File error");
 			e.printStackTrace();
 		}
+		
+		
 
 	}
 

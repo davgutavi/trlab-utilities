@@ -36,7 +36,6 @@ import utils.TextUtilities;
 public class InputFacade {
 
 	
-	@SuppressWarnings("unused")
 	private static final Logger LOG = LoggerFactory.getLogger(InputFacade.class);
 
 
@@ -154,8 +153,10 @@ public class InputFacade {
 				
 		String xmlRoot = SystemUtilities.getResourcesXmlPath();
 		
-		DatasetsLoader n = new DatasetsLoader(xmlRoot);
+//		LOG.debug(xmlRoot);
 		
+		DatasetsLoader n = new DatasetsLoader(xmlRoot);
+		  
 		Common dataset = n.getResourcesByName(datasetName);
 				
 		return dataset;
