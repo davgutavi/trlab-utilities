@@ -13,6 +13,7 @@ general/ListLoadWorkFlow.class
 utils/OutTextFile.class
 input/workflows/LabOneSolRun.class
 input/Parameters.class
+input/workflows/LabOptListRun.class
 input/datasets/DatasetsLoader.class
 general/SolLoadWorkFlow.class
 input/workflows/LabListRun.class
@@ -40,10 +41,12 @@ input/algorithm/Model.class
 input/workflows/TriGenRun.class
 input/algorithm/Implementation.class
 datasetinterface/DatasetTypeRadioButtons.class
+input/laboratory/OPTsolBatch.class
 general/AlgorithmWorkFlow.class
 utils/WorkFlowUtilities.class
 general/LegacySolLoadWorkFlow.class
 general/GSTutils.class
+general/OptListLoadWorkflow.class
 input/datasets/Biological.class
 datasetinterface/DatasetTypeRadioButtons$1.class
 input/algorithm/Model$FitnessClass.class
