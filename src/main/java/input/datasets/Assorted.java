@@ -6,6 +6,7 @@ package input.datasets;
  * @author David Gutiérrez Avilés
  *
  */
+
 public class Assorted extends Real {
 
 	/**

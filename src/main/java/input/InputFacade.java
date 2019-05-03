@@ -36,6 +36,7 @@ import utils.TextUtilities;
 public class InputFacade {
 
 	
+	@SuppressWarnings("unused")
 	private static final Logger LOG = LoggerFactory.getLogger(InputFacade.class);
 
 
