@@ -1,12 +1,16 @@
 package utils;
 
 import general.Tricluster;
-
 import java.text.Format;
 import java.util.Iterator;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class FormatUtils {
+	
+	private static final Logger LOG = LoggerFactory.getLogger(FormatUtils.class);
 	
 	public static String[] getExcelStrings(List<Tricluster> solutions,double[][][] dataset)  {
 		return getExcelStings(solutions,dataset, TextUtilities.getDecimalFormat('.',"0.####"));
@@ -185,9 +189,14 @@ public class FormatUtils {
 		return f;
 
 	}
+    
+    public static String[] getRstrings(List<Tricluster> solutions,double[][][] dataset)  {
+    	return getRstrings(solutions,dataset, TextUtilities.getDecimalFormat('.',"0.####"));
+    	
+    }
 	
 	
-	public static String[] getRstrings(List<Tricluster> solutions,double[][][] dataset) {
+	public static String[] getRstrings(List<Tricluster> solutions,double[][][] dataset, Format format)  {
 
 		
 		String[] f = new String[solutions.size()];
@@ -215,7 +224,7 @@ public class FormatUtils {
 					while (it_g.hasNext()) {
 						int v_g = (it_g.next()).intValue();
 						double value = dataset[v_g][v_c][v_t];
-						str+=v_t + ";" + v_c + ";" + v_g + ";"+value+"\n";
+						str+=v_t + ";" + v_c + ";" + v_g + ";"+format.format(value)+"\n";
 					}
 				}
 			}
