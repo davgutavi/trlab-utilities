@@ -11,6 +11,8 @@
 			<fitness name = "msr3d">fitnessfunctions.Msr3d</fitness>
 			<fitness name = "lsl">fitnessfunctions.Lsl</fitness>
 			<fitness name = "msl">fitnessfunctions.Msl</fitness>
+			<fitness name = "lslts">fitnessfunctions.Lslts</fitness>
+			<fitness name = "mslts">fitnessfunctions.Mslts</fitness>
 		</fitnessfunctions>
 		
 		<datahierarchies>
@@ -33,6 +35,7 @@
 			<initialpop name ="basic">initialpops.BasicInitialPop</initialpop>
 			<initialpop name ="tensors">initialpops.TensorInitialPop</initialpop>
 			<initialpop name ="earthquake">initialpops.EarthQuakeInitialPop</initialpop>
+			<initialpop name ="time series">initialpops.TimeSeriesInitialPop</initialpop>
 		</initialpops>	
 		
 		<selections>
@@ -42,6 +45,7 @@
 		<crossovers>
 			<crossover name = "one point">crossovers.OnePointCrossover</crossover>
 			<crossover name = "relaxed">crossovers.RelaxedCrossover</crossover>
+			<crossover name = "time series">crossovers.TimeSeriesCrossover</crossover>
 		</crossovers>
 		
 		<mutations>

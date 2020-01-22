@@ -10,6 +10,7 @@ import org.slf4j.LoggerFactory;
 
 public class FormatUtils {
 	
+	@SuppressWarnings("unused")
 	private static final Logger LOG = LoggerFactory.getLogger(FormatUtils.class);
 	
 	public static String[] getExcelStrings(List<Tricluster> solutions,double[][][] dataset)  {

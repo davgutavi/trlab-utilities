@@ -594,7 +594,6 @@ public class LoadDataset extends JDialog {
 			
 			
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 

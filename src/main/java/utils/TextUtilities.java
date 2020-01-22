@@ -274,6 +274,35 @@ public class TextUtilities {
 	
 	
 	
+	public static String vectorOfIntToString(int[] vector) {
+		
+		return vectorOfIntToString(vector,vector.length,",");
+	}
+	
+	
+	
+	public static String vectorOfIntToString(int[] vector,int limit,String sep) {
+		String r = "";
+		int columns = vector.length;
+		
+		r = "";
+		
+		int i = 0;
+		
+		for (int j =0;j<columns;j++){
+				
+			if (i==(limit-1)){
+				r+=vector[j]+"\n";
+				i = 0;
+			}
+			else{
+				r+=vector[j]+sep;
+				i++;
+			}
+		}
+		
+		return r;
+	}
 	
 	public static String vectorOfDoubleToString (double[] vector,int limit){
 		return vectorOfDoubleToString (vector,limit,",", '.', "#.#");
