@@ -20,6 +20,7 @@ import org.slf4j.LoggerFactory;
  */
 public class TextUtilities {
 	
+	
 	private static final Logger LOG = LoggerFactory.getLogger(TextUtilities.class);
 	
 	public static String getFileName (String path){

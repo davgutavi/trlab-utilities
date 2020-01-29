@@ -17,6 +17,7 @@ public class FormatUtils {
 		return getExcelStings(solutions,dataset, TextUtilities.getDecimalFormat('.',"0.####"));
 	}
 	
+	
 
     public static String[] getExcelStings(List<Tricluster> solutions,double[][][] dataset, Format format)  {
 		

@@ -31,6 +31,7 @@
 		</solutioncriteria>
 				
 		<!--All of them include random + data hierarchy methods  -->
+		
 		<initialpops>
 			<initialpop name ="basic">initialpops.BasicInitialPop</initialpop>
 			<initialpop name ="tensors">initialpops.TensorInitialPop</initialpop>
