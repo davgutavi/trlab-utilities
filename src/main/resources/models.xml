@@ -52,6 +52,7 @@
 		<mutations>
 			<mutation name = "put, remove and change">mutations.PutRemChanMutation</mutation>
 			<mutation name = "time series">mutations.TimeSeriesMutation</mutation>
+			<mutation name = "relaxed time series">mutations.TimeSeriesRelaxedMutation</mutation>
 		</mutations>	
 		
 	</model>
