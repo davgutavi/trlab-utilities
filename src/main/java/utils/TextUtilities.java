@@ -215,7 +215,6 @@ public class TextUtilities {
 				LOG.info("NA in gene "+count+" = 0.0");
 			}
 			else{
-			
 				e = new Double(iv);
 			}
 			

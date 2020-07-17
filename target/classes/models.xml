@@ -16,9 +16,8 @@
 		</fitnessfunctions>
 		
 		<datahierarchies>
-			<datahierarchy name="levels">datahierarchies.LevelDataHierarchy</datahierarchy>
-			<datahierarchy name="grid">datahierarchies.GridDataHierarchy</datahierarchy>
-			<datahierarchy name="2grid">datahierarchies.Grid2DataHierarchy</datahierarchy>
+			<datahierarchy name="levelsGST">datahierarchies.LevelsGST</datahierarchy>
+			<datahierarchy name="levelsGS">datahierarchies.LevelsGS</datahierarchy>
 		</datahierarchies>
 		
 		<stoppingcriteria>
@@ -37,6 +36,7 @@
 			<initialpop name ="tensors">initialpops.TensorInitialPop</initialpop>
 			<initialpop name ="earthquake">initialpops.EarthQuakeInitialPop</initialpop>
 			<initialpop name ="time series">initialpops.TimeSeriesInitialPop</initialpop>
+			<initialpop name ="tensorGS">initialpops.TensorGSInitialPop</initialpop>
 		</initialpops>	
 		
 		<selections>
@@ -47,10 +47,15 @@
 			<crossover name = "one point">crossovers.OnePointCrossover</crossover>
 			<crossover name = "relaxed">crossovers.RelaxedCrossover</crossover>
 			<crossover name = "time series">crossovers.TimeSeriesCrossover</crossover>
+			<crossover name = "foo">crossovers.FooCrossover</crossover>
+			<crossover name = "grid">crossovers.GridCrossover</crossover>
 		</crossovers>
 		
 		<mutations>
 			<mutation name = "put, remove and change">mutations.PutRemChanMutation</mutation>
+			<mutation name = "time series">mutations.TimeSeriesMutation</mutation>
+			<mutation name = "relaxed time series">mutations.TimeSeriesRelaxedMutation</mutation>
+			<mutation name = "grid">mutations.GridMutation</mutation>
 		</mutations>	
 		
 	</model>
