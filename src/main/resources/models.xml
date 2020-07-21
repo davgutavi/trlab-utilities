@@ -45,6 +45,8 @@
 			<selection name = "tournament">selections.TournamentSelection</selection>
 		</selections>
 		
+		
+		
 		<crossovers>
 			<crossover name = "one point">crossovers.OnePointCrossover</crossover>
 			<crossover name = "relaxed">crossovers.RelaxedCrossover</crossover>
