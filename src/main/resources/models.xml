@@ -18,6 +18,7 @@
 		<datahierarchies>
 			<datahierarchy name="levelsGST">datahierarchies.LevelsGST</datahierarchy>
 			<datahierarchy name="levelsGS">datahierarchies.LevelsGS</datahierarchy>
+			<datahierarchy name="gridGS">datahierarchies.GridGS</datahierarchy>
 		</datahierarchies>
 		
 		<stoppingcriteria>
