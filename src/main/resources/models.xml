@@ -13,6 +13,8 @@
 			<fitness name = "msl">fitnessfunctions.Msl</fitness>
 			<fitness name = "lslts">fitnessfunctions.Lslts</fitness>
 			<fitness name = "mslts">fitnessfunctions.Mslts</fitness>
+			<fitness name = "lslxy">fitnessfunctions.LslXY</fitness>
+			<fitness name = "mslxy">fitnessfunctions.MslXY</fitness>
 		</fitnessfunctions>
 		
 		
@@ -29,6 +31,7 @@
 		
 		<solutioncriteria>
 			<solutioncriterion name = "minimum fitness">solutioncriteria.MinimumFitness</solutioncriterion>
+			<solutioncriterion name = "minimum xy">solutioncriteria.MinimumFitness</solutioncriterion>
 		</solutioncriteria>
 				
 		<!--All of them include random + data hierarchy methods  -->
