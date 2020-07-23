@@ -52,7 +52,8 @@
 			<crossover name = "relaxed">crossovers.RelaxedCrossover</crossover>
 			<crossover name = "time series">crossovers.TimeSeriesCrossover</crossover>
 			<crossover name = "foo">crossovers.FooCrossover</crossover>
-			<crossover name = "grid">crossovers.GridCrossover</crossover>
+			<crossover name = "planes">crossovers.PlaneOverlappingCrossover</crossover>
+			<crossover name = "switch">crossovers.SwitchXYCrossover</crossover>
 		</crossovers>
 		
 		<mutations>

@@ -30,6 +30,7 @@ import utils.WorkFlowUtilities;
 
 public class Parser {
 	
+	@SuppressWarnings("unused")
 	private static final Logger LOG = LoggerFactory.getLogger(Parser.class);
 
 	private static final String SOLUTION_EXTENSION = ".sol";
@@ -92,11 +93,11 @@ public class Parser {
 		String auxThreads = control.getThreads() + "";
 		String auxSol = buildSolString(resources.getSolutions());
 		
-		LOG.debug("Building G hierarchy");
+		
 		String auxGhi = buildDataHiearchyString(resources.getGhie());
-		LOG.debug("Building C hierarchy");
+		
 		String auxChi = buildDataHiearchyString(resources.getChie());
-		LOG.debug("Building T hierarchy");
+		
 		String auxThi = buildDataHiearchyString(resources.getThie());
 
 		sf.setProperty("execTime", auxExecTime);
@@ -336,11 +337,11 @@ public class Parser {
 
 		Collections.sort(auxLlevels);
 		
-		for (Integer auxL : auxLlevels) {
-			
-			LOG.debug("L = "+auxL+" , Count = "+hierarchy.get(auxL));
-						
-		}
+//		for (Integer auxL : auxLlevels) {
+//			
+//			LOG.debug("L = "+auxL+" , Count = "+hierarchy.get(auxL)+"\n");
+//						
+//		}
 		
 		
 
@@ -362,7 +363,7 @@ public class Parser {
 
 		}
 		
-		LOG.debug("hierarchy = "+r);
+//		LOG.debug("hierarchy = "+r+"\n");
 
 		return r;
 	}
