@@ -15,6 +15,10 @@
 			<fitness name = "mslts">fitnessfunctions.Mslts</fitness>
 			<fitness name = "lslxy">fitnessfunctions.LslXY</fitness>
 			<fitness name = "mslxy">fitnessfunctions.MslXY</fitness>
+			<fitness name = "msr3dxy">fitnessfunctions.Msr3dXY</fitness>
+			<fitness name = "mslxybias">fitnessfunctions.MslXYbias</fitness>	
+			<fitness name = "lslxybias">fitnessfunctions.LslXYbias</fitness>	
+			<fitness name = "msr3dxybias">fitnessfunctions.Msr3dXYbias</fitness>
 		</fitnessfunctions>
 		
 		
