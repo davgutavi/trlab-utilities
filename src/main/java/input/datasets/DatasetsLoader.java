@@ -120,7 +120,7 @@ public class DatasetsLoader {
 				NamedNodeMap attrib = currentDatasetNode.getAttributes();
 
 				String id = (attrib.getNamedItem("id")).getNodeValue();
-
+				
 				String name = (attrib.getNamedItem("name")).getNodeValue();
 
 				r.put(name, id);

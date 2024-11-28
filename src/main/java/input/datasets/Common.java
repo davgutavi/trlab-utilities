@@ -229,6 +229,10 @@ public class Common implements Serializable{
 		
 		double [][][] r  = new double[this.geneSize][this.sampleSize][this.timeSize];
 		
+		System.out.print("PATH LIST:");
+		for (String e:paths)
+			System.out.println(e);
+		
 		for (int t = 0; t < this.timeSize; t++) {
 			
 			String path = paths[t];
@@ -236,7 +240,7 @@ public class Common implements Serializable{
 			InTextFile f;
 			
 			try {
-			
+				System.out.println("PATH = "+path);
 				f = new InTextFile(path);
 				
 				int cont = 1;

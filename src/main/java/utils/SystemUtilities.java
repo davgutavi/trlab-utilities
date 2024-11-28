@@ -201,7 +201,12 @@ public class SystemUtilities {
 	public static String getGOassociationPath (String organism) {
 		
 		String r = "";
+		
+		
+		LOG.debug("***************************************************** "+organism);
 		String goAssocName = (getSystemProperties()).getProperty(organism);
+		
+		
 		
 		if (isDeveloping()){
 						

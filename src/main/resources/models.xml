@@ -19,6 +19,8 @@
 			<fitness name = "mslxybias">fitnessfunctions.MslXYbias</fitness>	
 			<fitness name = "lslxybias">fitnessfunctions.LslXYbias</fitness>	
 			<fitness name = "msr3dxybias">fitnessfunctions.Msr3dXYbias</fitness>
+			<fitness name = "lslinstancets">fitnessfunctions.LslInstanceTs</fitness>	
+			<fitness name = "mslinstancets">fitnessfunctions.MslInstanceTs</fitness>
 		</fitnessfunctions>
 		
 		
@@ -46,6 +48,7 @@
 			<initialpop name ="earthquake">initialpops.EarthQuakeInitialPop</initialpop>
 			<initialpop name ="time series">initialpops.TimeSeriesInitialPop</initialpop>
 			<initialpop name ="tensorGS">initialpops.TensorGSInitialPop</initialpop>
+			<initialpop name ="instance time series">initialpops.InstanceTimeSeriesInitialPop</initialpop>
 		</initialpops>	
 		
 		<selections>
@@ -61,6 +64,7 @@
 			<crossover name = "foo">crossovers.FooCrossover</crossover>
 			<crossover name = "planes">crossovers.PlaneOverlappingCrossover</crossover>
 			<crossover name = "switch">crossovers.SwitchXYCrossover</crossover>
+			<crossover name = "instance time series">crossovers.InstanceTimeSeriesCrossover</crossover>
 		</crossovers>
 		
 		<mutations>
@@ -68,6 +72,7 @@
 			<mutation name = "time series">mutations.TimeSeriesMutation</mutation>
 			<mutation name = "relaxed time series">mutations.TimeSeriesRelaxedMutation</mutation>
 			<mutation name = "grid">mutations.GridMutation</mutation>
+			<mutation name = "instance time series">mutations.InstanceTimeSeriesMutation</mutation>			
 		</mutations>	
 		
 	</model>
